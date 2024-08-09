@@ -19,14 +19,13 @@ header {
     background-color: #007bff;
     color: #fff;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 .logo img {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 

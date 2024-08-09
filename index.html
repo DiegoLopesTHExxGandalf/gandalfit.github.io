@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Fictícia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#titulo">Título</a></li>
+            <li><a href="#produto">Imagens do Produto</a></li>
+            <li><a href="#descricao">Descrição do Produto</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#inscricao">Formulário de Inscrição</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Título -->
+    <section id="titulo">
+        <h1>Bem-vindo à [Nome da Startup]</h1>
+        <p>Inovação em [Setor da Startup]</p>
+    </section>
+
+    <!-- Seção de Imagens do Produto/Serviço -->
+    <section id="produto">
+        <h2>Nossos Produtos/Serviços</h2>
+        <div class="produto-imagens">
+            <img src="produto1.jpg" alt="Imagem do Produto">
+            <img src="produto2.jpg" alt="Imagem do Produto">
+        </div>
+    </section>
+
+    <!-- Seção de Descrição do Produto/Serviço -->
+    <section id="descricao">
+        <h2>Descrição do Produto</h2>
+        <p>Descrição detalhada do produto ou serviço oferecido pela startup, destacando suas funcionalidades e benefícios para os clientes.</p>
+    </section>
+
+    <!-- Seção da Equipe -->
+    <section id="equipe">
+        <h2>Conheça Nossa Equipe</h2>
+        <div class="equipe">
+            <div class="membro">
+                <img src="equipe1.jpg" alt="Membro da equipe">
+                <h3>Nome do Membro 1</h3>
+                <p>Cargo</p>
+            </div>
+            <div class="membro">
+                <img src="equipe2.jpg" alt="Membro da equipe">
+                <h3>Nome do Membro 2</h3>
+                <p>Cargo</p>
+            </div>
+            <div class="membro">
+                <img src="equipe3.jpg" alt="Membro da equipe">
+                <h3>Nome do Membro 3</h3>
+                <p>Cargo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Formulário de Inscrição -->
+    <section id="inscricao">
+        <h2>Inscreva-se para saber mais</h2>
+        <form action="submit.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rolar suavemente -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

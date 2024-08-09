@@ -1,84 +1,65 @@
-/* Estilo global */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-.logo img {
-    max-width: 150px;
+.logo {
+    width: 150px;
     height: auto;
-    margin-bottom: 20px;
 }
 
-/* Navegação */
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #444;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Seções */
 section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
-.produto-imagens img {
-    max-width: 300px;
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.equipe-membro {
+    display: inline-block;
+    text-align: center;
     margin: 10px;
-    height: auto;
 }
 
-/* Equipe */
-.equipe {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.membro {
-    text-align: center;
-}
-
-.membro img {
-    width: 150px;
-    height: 150px;
+.equipe-membro img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
-/* Formulário */
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 form label {
@@ -86,34 +67,21 @@ form label {
 }
 
 form input {
-    padding: 10px;
+    padding: 8px;
     margin-top: 5px;
-    width: 300px;
-    border-radius: 4px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 form button {
+    padding: 10px;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #444;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 form button:hover {
-    background-color: #0056b3;
-}
-
-/* Rodapé */
-footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #555;
 }

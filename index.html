@@ -1,89 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Fictícia</title>
+    <title>Nome da Startup</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Cabeçalho com logo centralizada e navegação -->
+    <!-- Logo Centralizada -->
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo da Startup">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#produto">Produto</a></li>
-                <li><a href="#descricao">Descrição</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#formulario">Inscrição</a></li>
-            </ul>
-        </nav>
+        <img src="caminho/para/sua-logo.png" alt="Logo da Startup" class="logo">
     </header>
 
-    <!-- Seção de Produto -->
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#produto">Produto</a></li>
+            <li><a href="#descricao">Descrição</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#formulario">Inscrição</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção do Produto -->
     <section id="produto">
-        <h2>Nosso Produto</h2>
-        <div class="produto-imagens">
-            <img src="images/produto1.jpg" alt="Imagem do Produto 1">
-            <img src="images/produto2.jpg" alt="Imagem do Produto 2">
-        </div>
+        <h2>Produto</h2>
+        <img src="caminho/para/imagem1.jpg" alt="Imagem do Produto">
+        <img src="caminho/para/imagem2.jpg" alt="Imagem do Produto">
     </section>
 
     <!-- Seção de Descrição -->
     <section id="descricao">
-        <h2>Descrição do Produto</h2>
-        <p>Aqui você descreve o produto ou serviço oferecido pela sua startup. Destaque as principais funcionalidades, benefícios e diferenciais.</p>
+        <h2>Descrição</h2>
+        <p>Descrição detalhada do produto ou serviço oferecido pela startup.</p>
     </section>
 
-    <!-- Seção de Equipe -->
+    <!-- Seção da Equipe -->
     <section id="equipe">
-        <h2>Conheça Nossa Equipe</h2>
-        <div class="equipe">
-            <div class="membro">
-                <img src="images/equipe1.jpg" alt="Membro da equipe 1">
-                <h3>Nome do Membro 1</h3>
-                <p>Cargo</p>
-            </div>
-            <div class="membro">
-                <img src="images/equipe2.jpg" alt="Membro da equipe 2">
-                <h3>Nome do Membro 2</h3>
-                <p>Cargo</p>
-            </div>
-            <div class="membro">
-                <img src="images/equipe3.jpg" alt="Membro da equipe 3">
-                <h3>Nome do Membro 3</h3>
-                <p>Cargo</p>
-            </div>
+        <h2>Equipe</h2>
+        <div class="equipe-membro">
+            <img src="caminho/para/foto1.jpg" alt="Nome do Membro">
+            <p>Nome do Membro - Cargo</p>
+        </div>
+        <div class="equipe-membro">
+            <img src="caminho/para/foto2.jpg" alt="Nome do Membro">
+            <p>Nome do Membro - Cargo</p>
+        </div>
+        <div class="equipe-membro">
+            <img src="caminho/para/foto3.jpg" alt="Nome do Membro">
+            <p>Nome do Membro - Cargo</p>
         </div>
     </section>
 
-    <!-- Seção de Formulário -->
+    <!-- Seção do Formulário -->
     <section id="formulario">
-        <h2>Inscreva-se para saber mais</h2>
-        <form>
+        <h2>Inscrição</h2>
+        <form action="#" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
-
-            <label for="email">Email:</label>
+            
+            <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
-
+            
             <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" name="cidade" required>
-
+            
             <label for="estado">Estado:</label>
             <input type="text" id="estado" name="estado" required>
-
+            
             <button type="submit">Enviar</button>
         </form>
     </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2024 Startup Fictícia - Todos os direitos reservados.</p>
-    </footer>
 
 </body>
 </html>

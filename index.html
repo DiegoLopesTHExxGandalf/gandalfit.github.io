@@ -8,74 +8,66 @@
 </head>
 <body>
 
+    <!-- Cabeçalho com logo centralizada e navegação -->
     <header>
         <div class="logo">
-            <img src="logo1ac.jpg" alt="Logo da Startup">
+            <img src="images/logo.png" alt="Logo da Startup">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#produto">Produto</a></li>
+                <li><a href="#descricao">Descrição</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#formulario">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Menu de Navegação -->
-    <nav>
-        <ul>
-            <li><a href="#titulo">Título</a></li>
-            <li><a href="#produto">Imagens do Produto</a></li>
-            <li><a href="#descricao">Descrição do Produto</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#inscricao">Formulário de Inscrição</a></li>
-        </ul>
-    </nav>
-
-    <!-- Seção de Título -->
-    <section id="titulo">
-        <h1>Bem-vindo à [Nome da Startup]</h1>
-        <p>Inovação em [Setor da Startup]</p>
-
-    </section>
-
-    <!-- Seção de Imagens do Produto/Serviço -->
+    <!-- Seção de Produto -->
     <section id="produto">
-        <h2>Nossos Produtos/Serviços</h2>
+        <h2>Nosso Produto</h2>
         <div class="produto-imagens">
-            <img src="produto1.jpg" alt="Imagem do Produto">
-            <img src="produto2.jpg" alt="Imagem do Produto">
+            <img src="images/produto1.jpg" alt="Imagem do Produto 1">
+            <img src="images/produto2.jpg" alt="Imagem do Produto 2">
         </div>
     </section>
 
-    <!-- Seção de Descrição do Produto/Serviço -->
+    <!-- Seção de Descrição -->
     <section id="descricao">
         <h2>Descrição do Produto</h2>
-        <p>Descrição detalhada do produto ou serviço oferecido pela startup, destacando suas funcionalidades e benefícios para os clientes.</p>
+        <p>Aqui você descreve o produto ou serviço oferecido pela sua startup. Destaque as principais funcionalidades, benefícios e diferenciais.</p>
     </section>
 
-    <!-- Seção da Equipe -->
+    <!-- Seção de Equipe -->
     <section id="equipe">
         <h2>Conheça Nossa Equipe</h2>
         <div class="equipe">
             <div class="membro">
-                <img src="equipe1.jpg" alt="Membro da equipe">
+                <img src="images/equipe1.jpg" alt="Membro da equipe 1">
                 <h3>Nome do Membro 1</h3>
                 <p>Cargo</p>
             </div>
             <div class="membro">
-                <img src="equipe2.jpg" alt="Membro da equipe">
+                <img src="images/equipe2.jpg" alt="Membro da equipe 2">
                 <h3>Nome do Membro 2</h3>
                 <p>Cargo</p>
             </div>
             <div class="membro">
-                <img src="equipe3.jpg" alt="Membro da equipe">
+                <img src="images/equipe3.jpg" alt="Membro da equipe 3">
                 <h3>Nome do Membro 3</h3>
                 <p>Cargo</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Formulário de Inscrição -->
-    <section id="inscricao">
+    <!-- Seção de Formulário -->
+    <section id="formulario">
         <h2>Inscreva-se para saber mais</h2>
-        <form action="submit.html" method="post">
+        <form>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail:</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="cidade">Cidade:</label>
@@ -88,16 +80,10 @@
         </form>
     </section>
 
-    <!-- Rolar suavemente -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Startup Fictícia - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>

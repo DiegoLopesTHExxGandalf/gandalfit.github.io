@@ -1,20 +1,13 @@
-styles.css
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo do corpo e fonte */
+/* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
-    padding: 0 20px;
 }
 
+/* Cabeçalho */
 header {
     background-color: #007bff;
     color: #fff;
@@ -28,22 +21,17 @@ header {
     margin-bottom: 20px;
 }
 
-
-/* Menu de Navegação */
-nav {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
+/* Navegação */
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -52,80 +40,80 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo das Seções */
+/* Seções */
 section {
-    margin: 40px 0;
-}
-
-h1, h2 {
-    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
     margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.produto-imagens img, .equipe img {
-    max-width: 100%;
-    height: auto;
+.produto-imagens img {
+    max-width: 300px;
     margin: 10px;
+    height: auto;
 }
-
-
-
 
 /* Equipe */
 .equipe {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .membro {
-    flex-basis: 30%;
     text-align: center;
 }
 
 .membro img {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
-
-.membro h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
 }
 
 /* Formulário */
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    align-items: center;
 }
 
-label {
-    margin: 10px 0 5px;
+form label {
+    margin-top: 10px;
 }
 
-input, button {
+form input {
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 300px;
+    border-radius: 4px;
     border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-button {
-    background-color: #333;
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
     color: #fff;
+    border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-button:hover {
-    background-color: #555;
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

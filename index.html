@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,59 +18,57 @@
             <li><a href="#produto">Produto</a></li>
             <li><a href="#descricao">Descrição</a></li>
             <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#formulario">Inscrição</a></li>
+            <li><a href="#formulario">Formulário</a></li>
         </ul>
     </nav>
 
     <!-- Seção do Produto -->
     <section id="produto">
         <h2>Produto</h2>
-        <img src="produto1.jpg" alt="Imagem do Produto">
-        <img src="produto2.jpg" alt="Imagem do Produto">
+        <img src="produto1.jpg" alt="Imagem do Produto" class="imagem-produto">
+        <img src="produto2.jpg" alt="Imagem do Produto" class="imagem-produto">
     </section>
 
-    <!-- Seção de Descrição -->
+    <!-- Seção da Descrição -->
     <section id="descricao">
         <h2>Descrição</h2>
-        <p>Descrição detalhada do produto ou serviço oferecido pela startup.</p>
+        <p>Descrição do produto/serviço...</p>
     </section>
 
     <!-- Seção da Equipe -->
     <section id="equipe">
         <h2>Equipe</h2>
-        <div class="equipe-membro">
+        <div class="membro-equipe">
             <img src="equipe1.jpg" alt="Nome do Membro">
-            <p>Nome do Membro - Cargo</p>
+            <h3>Nome do Membro</h3>
+            <p>Cargo</p>
         </div>
-        <div class="equipe-membro">
+        <div class="membro-equipe">
             <img src="equipe2.jpg" alt="Nome do Membro">
-            <p>Nome do Membro - Cargo</p>
+            <h3>Nome do Membro</h3>
+            <p>Cargo</p>
         </div>
-        <div class="equipe-membro">
+        <div class="membro-equipe">
             <img src="equipe3.jpg" alt="Nome do Membro">
-            <p>Nome do Membro - Cargo</p>
+            <h3>Nome do Membro</h3>
+            <p>Cargo</p>
         </div>
     </section>
 
     <!-- Seção do Formulário -->
     <section id="formulario">
-        <h2>Inscrição</h2>
-        <form action="#" method="post">
+        <h2>Inscreva-se</h2>
+        <form>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
+            <input type="text" id="nome" name="nome">
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
+            <input type="email" id="email" name="email">
             <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" required>
-            
+            <input type="text" id="cidade" name="cidade">
             <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" required>
-            
+            <input type="text" id="estado" name="estado">
             <button type="submit">Enviar</button>
         </form>
     </section>
-
 </body>
 </html>
